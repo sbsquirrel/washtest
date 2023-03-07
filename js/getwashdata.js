@@ -1,6 +1,10 @@
 (function() {
 
-    // Download the data
+
+    // Create event listeners for when the user submits the form
+    $(document).ready(function() {
+        $("#submitButton").click(function() {
+
     $.ajaxSetup({
  		 headers : {   
     	'X-Sonnys-API-ID' : 'happyswash',
@@ -11,12 +15,6 @@
             var feat = resp.data.customers,
         });
 
-
-    // Create event listeners for when the user submits the form
-    $(document).ready(function() {
-        $("#submitButton").click(function() {
-//            tableau.connectionName = "Carwash data"; // This will be the data source name in Tableau
-//            tableau.submit(); // This sends the connector object to Tableau
         });
     });
 })();
