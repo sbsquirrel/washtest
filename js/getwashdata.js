@@ -43,7 +43,7 @@
   	}
 	});
         $.getJSON("https://sandboxapi.sonnyscontrols.com/v1/customer", function(resp) {
-            var feat = resp.customers,
+            var feat = resp.data.customers,
                 tableData = [];
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
